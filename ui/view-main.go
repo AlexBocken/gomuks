@@ -415,7 +415,7 @@ func (view *MainView) NotifyMessage(room *rooms.Room, message ifc.Message, shoul
 		// The message is not in the current room, show new message status in room list.
 		room.AddUnread(message.ID(), should.Notify, should.Highlight)
 	} else {
-		view.matrix.MarkRead(room.ID, message.ID())
+		room.AddUnread(message.ID(), should.Notify, should.Highlight)
 	}
 
 	if should.Notify && !recentlyFocused && !view.config.Preferences.DisableNotifications {
