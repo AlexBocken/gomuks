@@ -17,7 +17,7 @@ const helpText = `# General
 
 # Media
 /download [path] - Downloads file from selected message.
-/open [path]     - Download file from selected message and open it with xdg-open.
+/open [path]     - Download file from selected message and open it with rifle.
 /upload <path>   - Upload the file at the given path to the current room.
 
 # Sending special messages

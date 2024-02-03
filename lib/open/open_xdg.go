@@ -2,6 +2,6 @@
 
 package open
 
-const Command = "xdg-open"
+const Command = "rifle"
 
 var Args []string
